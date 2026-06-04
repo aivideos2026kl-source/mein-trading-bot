@@ -9,15 +9,3 @@
     "telegraf": "^4.15.0"
   }
 }
- Scrolle runter und klicke **"Commit changes"**.
-
-3.  Wiederhole das für die zweite Datei: Klicke wieder auf **"Add file"** -> **"Create new file"**.
-4.  Nenne sie `index.js` und füge das ein:
-    ```javascript
-    const { Telegraf } = require('telegraf');
-    const bot = new Telegraf(process.env.BOT_TOKEN);
-
-    bot.start((ctx) => ctx.reply('Bot läuft! Dein Trading-Tool ist bereit.'));
-
-    bot.launch();
-    console.log('Bot gestartet...');
